@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet Permission -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCES S_NETWORK_STATE" />
+    
+    <!-- SMS Permission -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    
+    <!-- Phone Call Permission -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <!-- Bluetooth Permission -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Agriculture"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".UserFeedbackActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity android:name=".ComplainsActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".ReceiptActivity" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".CropsActivity" />
+        <activity android:name=".MarketActivity" />
+        <activity android:name=".EquipmentActivity" />
+        <activity android:name=".ReportsActivity" />
+        <activity android:name=".ContentActivity" />
+        <activity android:name=".SoilHealthActivity" />
+        <activity android:name=".AgronomyActivity" />
+        <activity android:name=".PestDiseaseActivity" />
+        <activity android:name=".FertilizerActivity" />
+        <activity android:name=".PolicyActivity" />
+        <activity android:name=".ServicesActivity" />
+    </application>
+
+</manifest>
